@@ -2,13 +2,12 @@
 Console.WriteLine("Введите трехзначное число: ");
 string numberStr = Console.ReadLine();
 
-if (numberStr.Length == 3)
+while (numberStr.Length != 3)
 {
-	int number = Convert.ToInt32(numberStr);
-	int digit2 = (number % 100) / 10;
-	System.Console.WriteLine(digit2);
+	Console.WriteLine("Для выполенния программы, необходимо ввести трехзначное число: ");
+	numberStr = Console.ReadLine();
 }
-else
-{
-	System.Console.WriteLine("Вы ввели неверное число!");
-}
+int number = Convert.ToInt32(numberStr);
+int digit2 = (number % 100) / 10;
+System.Console.WriteLine(digit2);
+
