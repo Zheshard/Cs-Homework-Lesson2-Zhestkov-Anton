@@ -10,4 +10,3 @@ while (numberStr.Length != 3)
 int number = Convert.ToInt32(numberStr);
 int digit2 = (number % 100) / 10;
 System.Console.WriteLine(digit2);
-
